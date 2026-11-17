@@ -1,0 +1,26 @@
+# Application settings - do not upload
+appsettings*.json
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.vssscc
+*.vspscc
+
+# Build files
+bin/
+obj/
+
+# Test results
+TestResults/
+
+# Logs
+Log/
+*.log
+
+# Firebase service account credentials
+FCMJson/*.json
+
+# Google Wallet credentials
+wwwroot/GoogleWalletJson/

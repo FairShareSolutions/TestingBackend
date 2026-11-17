@@ -1,0 +1,27 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "55L8F56H89.com.FairShareSolutions.ios"
+        ],
+        "appID": "55L8F56H89.com.FairShareSolutions.ios",
+        "paths": [ "redirect/*" ],
+        "components": [
+          {
+            "/": "/*",
+            "RoutingNumber": "011401533",
+            "AccountNumber": "1111222233330000",
+            "InstitutionID": "ins_56"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "55L8F56H89.com.FairShareSolutions.ios"
+    ]
+  }
+}

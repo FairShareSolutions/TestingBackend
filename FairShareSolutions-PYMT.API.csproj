@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>FairShareSolutions_PYMT.API</RootNamespace>
+    <UserSecretsId>f0fe5d61-0742-47d7-b510-6760a8f1c6a6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\prashantm\.nuget\packages\nlog.config\4.7.15\contentFiles\any\any\NLog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc" Version="8.0.0" />
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.0.0" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="4.0.3.9" />
+    <PackageReference Include="AWSSDK.S3" Version="4.0.9.1" />
+    <PackageReference Include="AWSSDK.Textract" Version="4.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Redoc.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="RestSharp" Version="112.1.0" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.16.2" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="10.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resource\APIResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>APIResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource\APIResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>APIResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FCMJson\Images\" />
+    <Folder Include="wwwroot\GoogleWalletJson\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\apple-app-site-association" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FairShareSolutions-PYMT.Infrastructure\FairShareSolutions-PYMT.Infrastructure.csproj" />
+    <ProjectReference Include="..\FairShareSolutions-PYMT.Repository\FairShareSolutions-PYMT.Repository.csproj" />
+    <ProjectReference Include="..\FairShareSolutions-PYMT.Services\FairShareSolutions-PYMT.Services.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Divity for questions, feedback, and support.">
+    <meta name="theme-color" content="#f7f8f4">
+    <title>Contact Us | Divity</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="wrap nav">
+            <a class="brand" href="index.html">
+                <span class="mark">D</span><span>Divity</span>
+            </a>
+
+            <nav class="links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="faq.html">FAQ</a>
+                <a class="active" href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="legal.html">Legal</a>
+            </nav>
+
+            <a class="nav-cta" href="mailto:support@usedivity.com">Email Us ↗</a>
+
+            <button class="mobile-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="wrap">
+                <span class="eyebrow">Contact Divity</span>
+                <h1>Let's start a conversation.</h1>
+                <p class="lead">
+                    Have a question, need help, or want to share feedback?
+                    Send us a message.
+                </p>
+            </div>
+        </section>
+
+        <section class="wrap contact-grid">
+            <aside class="contact-card">
+                <h2>We'd love to hear from you.</h2>
+
+                <p>
+                    For product questions, support requests, privacy inquiries,
+                    partnerships, or general feedback, contact our team.
+                </p>
+
+                <hr class="dark-divider">
+
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:support@usedivity.com">
+                        support@usedivity.com
+                    </a>
+                </p>
+
+                <p class="small-text">
+                    Confirm that this inbox is active and monitored before
+                    publishing the page.
+                </p>
+            </aside>
+
+            <form class="form" data-contact-form>
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="name">Full name</label>
+                        <input id="name"
+                               name="name"
+                               autocomplete="name"
+                               required
+                               placeholder="Your name">
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email address</label>
+                        <input id="email"
+                               name="email"
+                               type="email"
+                               autocomplete="email"
+                               required
+                               placeholder="you@example.com">
+                    </div>
+
+                    <div class="field full">
+                        <label for="topic">What can we help with?</label>
+                        <select id="topic" name="topic">
+                            <option>General question</option>
+                            <option>Technical support</option>
+                            <option>Privacy request</option>
+                            <option>Business or partnership</option>
+                            <option>Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="field full">
+                        <label for="message">Message</label>
+                        <textarea id="message"
+                                  name="message"
+                                  required
+                                  placeholder="Tell us how we can help..."></textarea>
+                    </div>
+
+                    <div class="field full">
+                        <button class="button" type="submit">
+                            Prepare Email ↗
+                        </button>
+
+                        <p class="form-note">
+                            Selecting this button opens your email application.
+                            Your message is not submitted to this website.
+                        </p>
+
+                        <p data-form-message role="status" aria-live="polite"></p>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer-top">
+                <div>
+                    <a class="brand" href="index.html">
+                        <span class="mark">D</span><span>Divity</span>
+                    </a>
+                    <p class="footer-tag">
+                        Making shared payments easier to organize.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="contact.html">Contact Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms &amp; Conditions</a>
+                    <a href="legal.html">Legal</a>
+                    <a href="index.html">Home</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span data-year></span> Divity. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plaid Link Test</title>
+</head>
+<body>
+    <!--<h2>Connect Your Bank Account</h2>-->
+    <input type="hidden" id="link-button" style="display:none;">
+    <a id="open-app-link" href="" style="display:none;">iOS APP</a>
+    <script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>
+    <script>
+        // Step 2.2: Fetch link_token from your backend
+        fetch('/Plaid/GetLinkToken') // Your backend endpoint
+            .then(response => response.json())
+            .then(data => {
+                const linkToken = data.link_token;
+                console.log(linkToken);
+               
+                // Step 2.3: Initialize Plaid Link
+                const handler = Plaid.create({
+                    token: linkToken,
+                    onSuccess: function (public_token, metadata) {
+                        console.log("Public Token:", public_token);
+                        console.log("Metadata:", metadata);
+                        //window.location.href = `usefairshare://redirect?public_token=${public_token}`;
+                        //document.getElementById('link-button').style.display = 'block';
+                        //const link = document.getElementById('open-app-link');
+                        //window.location.href = link.href;
+                        // Step 2.4: Send public_token to backend to exchange for access_token
+                        const appLink = document.getElementById('open-app-link');
+                        appLink.href = `usefairshare://redirect?public_token=${public_token}`;
+                        window.location.href = appLink.href
+                        //window.location.href = `https://uatapi.usefairshare.com/Plaid/CallBack/?public_token=${public_token}`;
+                        //appLink.style.display = 'block';
+                        fetch('/Plaid/ExchangePublicToken', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            data: JSON.stringify(public_token)
+                        })
+                            .then(res => res.json())
+                            .then(data => {
+                                console.log("Access Token:", data.accessToken);
+                                alert("Access Token received!");
+                            });
+                    },
+                    onExit: function (err, metadata) {
+                        console.log("User exited Plaid Link:", err, metadata);
+                    }
+                });
+
+                // Step 2.5: Launch Plaid Link on button click
+                //document.getElementById('link-button').click = function () {
+                //    handler.open();
+                //};
+                function triggerHandlerOpen() {
+                    handler.open();
+                }
+                triggerHandlerOpen();
+            });
+    </script>
+</body>
+</html>

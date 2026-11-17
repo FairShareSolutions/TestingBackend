@@ -1,0 +1,25 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "55L8F56H89.com.FairShareSolutions.ios"
+        ],
+        "appID": "55L8F56H89.com.FairShareSolutions.ios",
+        "paths": [ "*" ],
+        "components": [
+          {
+            "/": "/*",
+            "comment": "Any"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "55L8F56H89.com.FairShareSolutions.ios"
+    ]
+  }
+}

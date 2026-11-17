@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairShareSolutions-PYMT.API", "FairShareSolutions-PYMT.API.csproj", "{8E915558-EA91-FB5E-EE8B-37D81DE2AAFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\Common\Common.csproj", "{9F0601AB-EA31-A20F-1B21-30C901BDC579}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairShareSolutions-PYMT.Infrastructure", "..\FairShareSolutions-PYMT.Infrastructure\FairShareSolutions-PYMT.Infrastructure.csproj", "{7CC839E1-C976-45F2-CBF9-9E9B1D6EC4F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairShareSolutions-PYMT.Repository", "..\FairShareSolutions-PYMT.Repository\FairShareSolutions-PYMT.Repository.csproj", "{514DFC67-CAB3-A179-0ABF-2BF3E6457AC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairShareSolutions-PYMT.Services", "..\FairShareSolutions-PYMT.Services\FairShareSolutions-PYMT.Services.csproj", "{DC9695C6-E378-1630-BD99-6A31FC9B7887}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentProcessor", "..\PaymentProcessor\PaymentProcessor.csproj", "{236E0EB5-C4D6-E9CA-3FFF-9E375241AD25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit Test", "..\Unit Test\Unit Test.csproj", "{92A05EAF-F481-2E67-A097-2B9C30A6C699}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E915558-EA91-FB5E-EE8B-37D81DE2AAFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E915558-EA91-FB5E-EE8B-37D81DE2AAFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E915558-EA91-FB5E-EE8B-37D81DE2AAFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E915558-EA91-FB5E-EE8B-37D81DE2AAFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F0601AB-EA31-A20F-1B21-30C901BDC579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0601AB-EA31-A20F-1B21-30C901BDC579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0601AB-EA31-A20F-1B21-30C901BDC579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0601AB-EA31-A20F-1B21-30C901BDC579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CC839E1-C976-45F2-CBF9-9E9B1D6EC4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC839E1-C976-45F2-CBF9-9E9B1D6EC4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC839E1-C976-45F2-CBF9-9E9B1D6EC4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC839E1-C976-45F2-CBF9-9E9B1D6EC4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{514DFC67-CAB3-A179-0ABF-2BF3E6457AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514DFC67-CAB3-A179-0ABF-2BF3E6457AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{514DFC67-CAB3-A179-0ABF-2BF3E6457AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{514DFC67-CAB3-A179-0ABF-2BF3E6457AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9695C6-E378-1630-BD99-6A31FC9B7887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9695C6-E378-1630-BD99-6A31FC9B7887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9695C6-E378-1630-BD99-6A31FC9B7887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9695C6-E378-1630-BD99-6A31FC9B7887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{236E0EB5-C4D6-E9CA-3FFF-9E375241AD25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{236E0EB5-C4D6-E9CA-3FFF-9E375241AD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{236E0EB5-C4D6-E9CA-3FFF-9E375241AD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{236E0EB5-C4D6-E9CA-3FFF-9E375241AD25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A05EAF-F481-2E67-A097-2B9C30A6C699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A05EAF-F481-2E67-A097-2B9C30A6C699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A05EAF-F481-2E67-A097-2B9C30A6C699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A05EAF-F481-2E67-A097-2B9C30A6C699}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B66EAE2-A9C7-40D7-A56E-EB310887D3A4}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs01.chetu.com/chetuprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FairShareSolutions-PYMT.API.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\Common\\Common.csproj
+		SccProjectName2 = ../Common
+		SccLocalPath2 = ..\\Common
+		SccProjectUniqueName3 = ..\\FairShareSolutions-PYMT.Infrastructure\\FairShareSolutions-PYMT.Infrastructure.csproj
+		SccProjectName3 = ../FairShareSolutions-PYMT.Infrastructure
+		SccLocalPath3 = ..\\FairShareSolutions-PYMT.Infrastructure
+		SccProjectUniqueName4 = ..\\FairShareSolutions-PYMT.Repository\\FairShareSolutions-PYMT.Repository.csproj
+		SccProjectName4 = ../FairShareSolutions-PYMT.Repository
+		SccLocalPath4 = ..\\FairShareSolutions-PYMT.Repository
+		SccProjectUniqueName5 = ..\\FairShareSolutions-PYMT.Services\\FairShareSolutions-PYMT.Services.csproj
+		SccProjectName5 = ../FairShareSolutions-PYMT.Services
+		SccLocalPath5 = ..\\FairShareSolutions-PYMT.Services
+		SccProjectUniqueName6 = ..\\PaymentProcessor\\PaymentProcessor.csproj
+		SccProjectName6 = ../PaymentProcessor
+		SccLocalPath6 = ..\\PaymentProcessor
+		SccProjectUniqueName7 = ..\\Unit\u0020Test\\Unit\u0020Test.csproj
+		SccProjectName7 = ../Unit\u0020Test
+		SccLocalPath7 = ..\\Unit\u0020Test
+	EndGlobalSection
+EndGlobal
